@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n-doc-title="meta.title">АвтоМастер — автосервис полного цикла в Москве</title>
+  <meta name="description" data-i18n="meta.desc" content="Диагностика, ремонт и техобслуживание любых марок. Гарантия 2 года, честные цены, оригинальные запчасти. Запись онлайн.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#hero" data-i18n="a11y.skip">Перейти к содержанию</a>
+
+  <!-- SVG sprite -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3l-5.8 3.1 1.1-6.5L2.6 9.3l6.5-.9L12 2.5z"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="10" r="3" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3.5 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2.5" y="4.5" width="19" height="15" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3 6.5l9 6.5 9-6.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-quote" viewBox="0 0 24 24"><path d="M9.5 6C6.5 7.3 5 9.7 5 13v5h6v-6H8.3c.2-1.7 1.2-3 3-3.7L9.5 6zm10 0c-3 1.3-4.5 3.7-4.5 7v5h6v-6h-2.7c.2-1.7 1.2-3 3-3.7L19.5 6z"/></symbol>
+  </svg>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html" aria-label="АвтоМастер — на главную">
+        <svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" transform="translate(2 2)"/>
+        </svg>
+        <span class="logo__text">Авто<span class="accent">Мастер</span></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Основная навигация" data-i18n-aria="nav.aria">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#services" data-i18n="nav.services">Услуги</a></li>
+          <li><a class="nav__link" href="#prices" data-i18n="nav.prices">Цены</a></li>
+          <li><a class="nav__link" href="#cases" data-i18n="nav.cases">Кейсы</a></li>
+          <li><a class="nav__link" href="#team" data-i18n="nav.team">Команда</a></li>
+          <li><a class="nav__link" href="#reviews" data-i18n="nav.reviews">Отзывы</a></li>
+          <li><a class="nav__link" href="#blog" data-i18n="nav.blog">Блог</a></li>
+          <li><a class="nav__link" href="#contacts" data-i18n="nav.contacts">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <div class="lang" role="group" aria-label="Язык / Language">
+          <button class="lang__btn is-active" data-lang="ru" type="button">RU</button>
+          <button class="lang__btn" data-lang="en" type="button">EN</button>
+        </div>
+        <a class="btn btn--accent header__cta" href="#contact" data-i18n="nav.cta">Записаться</a>
+        <button class="burger" id="burger" type="button" aria-label="Открыть меню" data-i18n-aria="a11y.menu" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__content reveal">
+          <span class="badge" data-i18n="hero.badge">Автосервис полного цикла · Москва</span>
+          <h1 class="hero__title" data-i18n="hero.title">Ваш автомобиль в надёжных руках</h1>
+          <p class="hero__sub" data-i18n="hero.sub">Диагностика, ремонт и техобслуживание любых марок. Гарантия 2 года, честные сметы и оригинальные запчасти — без скрытых работ.</p>
+          <div class="hero__actions">
+            <a class="btn btn--accent btn--lg" href="#contact" data-i18n="hero.cta1">Записаться на сервис</a>
+            <a class="btn btn--ghost btn--lg" href="#services"><span data-i18n="hero.cta2">Наши услуги</span> <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+          <ul class="hero__points">
+            <li data-i18n="hero.p1">Бесплатная диагностика при ремонте</li>
+            <li data-i18n="hero.p2">Подменный автомобиль</li>
+            <li data-i18n="hero.p3">Работаем с 2009 года</li>
+          </ul>
+        </div>
+        <div class="hero__media reveal">
+          <img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=1200&q=80"
+               alt="Механик за работой в автосервисе" data-i18n-alt="hero.imgAlt" width="600" height="750" fetchpriority="high">
+          <div class="hero__rating">
+            <div class="hero__stars" aria-hidden="true">
+              <svg class="icon icon--star"><use href="#i-star"/></svg><svg class="icon icon--star"><use href="#i-star"/></svg><svg class="icon icon--star"><use href="#i-star"/></svg><svg class="icon icon--star"><use href="#i-star"/></svg><svg class="icon icon--star"><use href="#i-star"/></svg>
+            </div>
+            <strong>4.9/5</strong>
+            <span data-i18n="hero.rating">по 1 240 отзывам</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <ul class="stats reveal">
+          <li class="stat"><span class="stat__num" data-count="15">0</span><span class="stat__label" data-i18n="stats.s1">лет опыта</span></li>
+          <li class="stat"><span class="stat__num" data-count="12000" data-suffix="+">0</span><span class="stat__label" data-i18n="stats.s2">довольных клиентов</span></li>
+          <li class="stat"><span class="stat__num" data-count="8000" data-suffix="+">0</span><span class="stat__label" data-i18n="stats.s3">авто в год</span></li>
+          <li class="stat"><span class="stat__num" data-count="4.9" data-decimals="1">0</span><span class="stat__label" data-i18n="stats.s4">рейтинг сервиса</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== SERVICES ===================== -->
+    <section class="section" id="services">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow" data-i18n="services.eyebrow">Услуги</span>
+          <h2 class="section__title" data-i18n="services.title">Полный спектр работ под одной крышей</h2>
+          <p class="section__sub" data-i18n="services.sub">От планового ТО до сложного ремонта двигателя — 14 постов, лифты и диагностическое оборудование ведущих брендов.</p>
+        </header>
+
+        <div class="grid grid--4">
+          <article class="card service reveal">
+            <span class="service__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <h3 class="card__title" data-i18n="services.s1.t">Техническое обслуживание</h3>
+            <p class="card__text" data-i18n="services.s1.d">Замена масла и фильтров, регламентные работы по книжке производителя, сброс сервисного интервала.</p>
+            <span class="price-from" data-i18n="services.from">от 1 500 ₽</span>
+          </article>
+
+          <article class="card service reveal">
+            <span class="service__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="9.5" y="9.5" width="5" height="5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+            <h3 class="card__title" data-i18n="services.s2.t">Компьютерная диагностика</h3>
+            <p class="card__text" data-i18n="services.s2.d">Считывание ошибок ЭБУ, осциллография, проверка датчиков и электронных систем автомобиля.</p>
+            <span class="price-from" data-i18n="services.from2">от 1 200 ₽</span>
+          </article>
+
+          <article class="card service reveal">
+            <span class="service__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 13h2l2-3h5l1.5 3H18a2 2 0 0 1 2 2v3H4v-5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="7.5" cy="18.5" r="1.8" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="16.5" cy="18.5" r="1.8" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M9 10V6h4l2 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span>
+            <h3 class="card__title" data-i18n="services.s3.t">Ремонт двигателя</h3>
+            <p class="card__text" data-i18n="services.s3.d">Замена цепи и ремня, ремонт ГБЦ, поршневая, системы ГРМ и топливной аппаратуры.</p>
+            <span class="price-from" data-i18n="services.from3">от 8 000 ₽</span>
+          </article>
+
+          <article class="card service reveal">
+            <span class="service__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="3.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 3v5.8M12 15.2V21M3 12h5.8M15.2 12H21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+            <h3 class="card__title" data-i18n="services.s4.t">Подвеска и ходовая</h3>
+            <p class="card__text" data-i18n="services.s4.d">Стойки, рычаги, сайлентблоки, ступицы и тормоза. Развал-схождение на 3D-стенде.</p>
+            <span class="price-from" data-i18n="services.from4">от 2 400 ₽</span>
+          </article>
+
+          <article class="card service reveal">
+            <span class="service__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 16l1.5-5A3 3 0 0 1 7.4 9h9.2a3 3 0 0 1 2.9 2L21 16v3h-3v-1.5H6V19H3v-3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M6.5 13.5h11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+            <h3 class="card__title" data-i18n="services.s5.t">Кузовной ремонт</h3>
+            <p class="card__text" data-i18n="services.s5.d">Правка, покраска в камере, удаление вмятин без покраски и полировка после ДТП.</p>
+            <span class="price-from" data-i18n="services.from5">от 3 500 ₽</span>
+          </article>
+
+          <article class="card service reveal">
+            <span class="service__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M13 2L4.5 13.5H11L10 22l9-11.5h-6.5L13 2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span>
+            <h3 class="card__title" data-i18n="services.s6.t">Автоэлектрика</h3>
+            <p class="card__text" data-i18n="services.s6.d">Проводка, генератор, стартер, ремонт блоков, установка дополнительного оборудования.</p>
+            <span class="price-from" data-i18n="services.from6">от 1 800 ₽</span>
+          </article>
+
+          <article class="card service reveal">
+            <span class="service__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-dasharray="3 3"/><circle cx="12" cy="12" r="1.6" fill="currentColor"/></svg></span>
+            <h3 class="card__title" data-i18n="services.s7.t">Шиномонтаж и балансировка</h3>
+            <p class="card__text" data-i18n="services.s7.d">Сезонная замена, ремонт проколов, компьютерная балансировка и хранение колёс.</p>
+            <span class="price-from" data-i18n="services.from7">от 900 ₽</span>
+          </article>
+
+          <article class="card service reveal">
+            <span class="service__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M4.2 7.5l2.6 1.5M17.2 15l2.6 1.5M4.2 16.5l2.6-1.5M17.2 9l2.6-1.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></span>
+            <h3 class="card__title" data-i18n="services.s8.t">Сервис кондиционеров</h3>
+            <p class="card__text" data-i18n="services.s8.d">Заправка фреона, поиск утечек, дезинфекция испарителя и ремонт компрессора.</p>
+            <span class="price-from" data-i18n="services.from8">от 2 000 ₽</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ADVANTAGES ===================== -->
+    <section class="section section--alt" id="advantages">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow" data-i18n="adv.eyebrow">Почему мы</span>
+          <h2 class="section__title" data-i18n="adv.title">Сервис, к которому возвращаются</h2>
+          <p class="section__sub" data-i18n="adv.sub">Мы не продаём лишнее: сначала диагностика, потом честная смета и только потом работа.</p>
+        </header>
+
+        <div class="grid grid--3">
+          <article class="adv reveal">
+            <span class="adv__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.5 12l2.5 2.5 4.5-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <div>
+              <h3 class="adv__title" data-i18n="adv.a1.t">Гарантия 2 года</h3>
+              <p class="adv__text" data-i18n="adv.a1.d">На все виды работ и установленные запчасти — письменный документ при выдаче.</p>
+            </div>
+          </article>
+          <article class="adv reveal">
+            <span class="adv__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 6.9H21l-5.3 4.2 2 7-5.7-4.4L6.3 20l2-7L3 8.9h6.6L12 2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span>
+            <div>
+              <h3 class="adv__title" data-i18n="adv.a2.t">Оригинальные запчасти</h3>
+              <p class="adv__text" data-i18n="adv.a2.d">Работаем с официальными поставщиками. Аналоги — только с вашего согласия.</p>
+            </div>
+          </article>
+          <article class="adv reveal">
+            <span class="adv__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+            <div>
+              <h3 class="adv__title" data-i18n="adv.a3.t">Прозрачные цены</h3>
+              <p class="adv__text" data-i18n="adv.a3.d">Смета согласовывается до начала работ. Лишнего не навязываем — никогда.</p>
+            </div>
+          </article>
+          <article class="adv reveal">
+            <span class="adv__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M7 21h10M8 8h8M8 12h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+            <div>
+              <h3 class="adv__title" data-i18n="adv.a4.t">Современное оборудование</h3>
+              <p class="adv__text" data-i18n="adv.a4.d">Подъёмники, 3D-стенд развал-схождения, диагностические сканеры Bosch и Launch.</p>
+            </div>
+          </article>
+          <article class="adv reveal">
+            <span class="adv__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+            <div>
+              <h3 class="adv__title" data-i18n="adv.a5.t">Мастера с опытом 10+ лет</h3>
+              <p class="adv__text" data-i18n="adv.a5.d">Каждый специалист проходит обучение у дилеров и работает «под своей» маркой.</p>
+            </div>
+          </article>
+          <article class="adv reveal">
+            <span class="adv__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 17l1.4-4.8A3 3 0 0 1 7.3 10h9.4a3 3 0 0 1 2.9 2.2L21 17v3h-3v-1.6H6V20H3v-3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M6.5 14h11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+            <div>
+              <h3 class="adv__title" data-i18n="adv.a6.t">Подменный автомобиль</h3>
+              <p class="adv__text" data-i18n="adv.a6.d">Если ремонт занимает больше дня — предоставим машину класса бизнес бесплатно.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROCESS ===================== -->
+    <section class="section" id="process">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow" data-i18n="proc.eyebrow">Как мы работаем</span>
+          <h2 class="section__title" data-i18n="proc.title">Четыре шага до исправного автомобиля</h2>
+        </header>
+
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step__num">01</span>
+            <h3 class="step__title" data-i18n="proc.p1.t">Запись</h3>
+            <p class="step__text" data-i18n="proc.p1.d">Оставляете заявку на сайте или звоните. Подбираем удобное время за 15 минут.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">02</span>
+            <h3 class="step__title" data-i18n="proc.p2.t">Диагностика</h3>
+            <p class="step__text" data-i18n="proc.p2.d">Осмотр на подъёмнике и компьютерная диагностика. При ремонте — бесплатно.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">03</span>
+            <h3 class="step__title" data-i18n="proc.p3.t">Смета и работа</h3>
+            <p class="step__text" data-i18n="proc.p3.d">Согласовываем стоимость, сроки и запчасти. Начинаем только после вашего «да».</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">04</span>
+            <h3 class="step__title" data-i18n="proc.p4.t">Выдача и гарантия</h3>
+            <p class="step__text" data-i18n="proc.p4.d">Показываем что сделано, выдаём гарантийный чек и смету с фотоотчётом.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== PRICES ===================== -->
+    <section class="section section--alt" id="prices">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow" data-i18n="prices.eyebrow">Цены</span>
+          <h2 class="section__title" data-i18n="prices.title">Понятный прайс без сюрпризов</h2>
+          <p class="section__sub" data-i18n="prices.sub">Итоговая стоимость зависит от марки и комплектации — точную смету называем после диагностики.</p>
+        </header>
+
+        <div class="table-wrap reveal">
+          <table class="prices">
+            <thead>
+              <tr>
+                <th data-i18n="prices.th1">Работа</th>
+                <th data-i18n="prices.th2">Что входит</th>
+                <th data-i18n="prices.th3">Срок</th>
+                <th class="ta-r" data-i18n="prices.th4">Цена</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="Работа / Work" data-i18n="prices.r1.n">Замена масла и фильтра</td>
+                <td data-label="Что входит / Includes" data-i18n="prices.r1.d">Масло, фильтр, сброс индикатора</td>
+                <td data-label="Срок / Time" data-i18n="prices.r1.t">40 мин</td>
+                <td class="ta-r price" data-label="Цена / Price">от 1 500 ₽</td>
+              </tr>
+              <tr>
+                <td data-label="Работа / Work" data-i18n="prices.r2.n">Компьютерная диагностика</td>
+                <td data-label="Что входит / Includes" data-i18n="prices.r2.d">Сканер, отчёт по ошибкам</td>
+                <td data-label="Срок / Time" data-i18n="prices.r2.t">30 мин</td>
+                <td class="ta-r price" data-label="Цена / Price">от 1 200 ₽</td>
+              </tr>
+              <tr>
+                <td data-label="Работа / Work" data-i18n="prices.r3.n">Замена тормозных колодок (ось)</td>
+                <td data-label="Что входит / Includes" data-i18n="prices.r3.d">Работа + прокачка контура</td>
+                <td data-label="Срок / Time" data-i18n="prices.r3.t">1,5 ч</td>
+                <td class="ta-r price" data-label="Цена / Price">от 2 400 ₽</td>
+              </tr>
+              <tr>
+                <td data-label="Работа / Work" data-i18n="prices.r4.n">Развал-схождение 3D</td>
+                <td data-label="Что входит / Includes" data-i18n="prices.r4.d">4 колеса, протокол замеров</td>
+                <td data-label="Срок / Time" data-i18n="prices.r4.t">1 ч</td>
+                <td class="ta-r price" data-label="Цена / Price">от 2 000 ₽</td>
+              </tr>
+              <tr>
+                <td data-label="Работа / Work" data-i18n="prices.r5.n">Замена ремня ГРМ</td>
+                <td data-label="Что входит / Includes" data-i18n="prices.r5.d">Комплект + ролики, регулировка</td>
+                <td data-label="Срок / Time" data-i18n="prices.r5.t">4–6 ч</td>
+                <td class="ta-r price" data-label="Цена / Price">от 9 500 ₽</td>
+              </tr>
+              <tr>
+                <td data-label="Работа / Work" data-i18n="prices.r6.n">Заправка кондиционера</td>
+                <td data-label="Что входит / Includes" data-i18n="prices.r6.d">Фреон, компрессорное масло, вакуум</td>
+                <td data-label="Срок / Time" data-i18n="prices.r6.t">1 ч</td>
+                <td class="ta-r price" data-label="Цена / Price">от 2 000 ₽</td>
+              </tr>
+              <tr>
+                <td data-label="Работа / Work" data-i18n="prices.r7.n">Шиномонтаж (4 колеса)</td>
+                <td data-label="Что входит / Includes" data-i18n="prices.r7.d">Демонтаж, балансировка, нитrogen</td>
+                <td data-label="Срок / Time" data-i18n="prices.r7.t">1,5 ч</td>
+                <td class="ta-r price" data-label="Цена / Price">от 3 600 ₽</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="price-note reveal">
+          <p data-i18n="prices.note">Для новых клиентов — бесплатная диагностика ходовой при заказе ремонта.</p>
+          <a class="btn btn--accent" href="#contact" data-i18n="prices.cta">Получить расчёт</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CASES (before/after) ===================== -->
+    <section class="section" id="cases">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow" data-i18n="cases.eyebrow">Кейсы</span>
+          <h2 class="section__title" data-i18n="cases.title">До и после: живые работы</h2>
+          <p class="section__sub" data-i18n="cases.sub">Потяните ползунок, чтобы увидеть результат. Каждый кейс — реальный автомобиль из нашего цеха.</p>
+        </header>
+
+        <div class="cases">
+          <article class="case reveal">
+            <div class="ba" style="--pos:50%">
+              <img class="ba__img ba__img--after" src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1200&q=80" alt="Автомобиль после кузовного ремонта" data-i18n-alt="cases.c1.after" loading="lazy" width="800" height="533">
+              <img class="ba__img ba__img--before" src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80" alt="Автомобиль до ремонта" data-i18n-alt="cases.c1.before" loading="lazy" width="800" height="533">
+              <span class="ba__tag ba__tag--l" data-i18n="cases.before">До</span>
+              <span class="ba__tag ba__tag--r" data-i18n="cases.after">После</span>
+              <span class="ba__handle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 6l-5 6 5 6M15 6l5 6-5 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <input class="ba__range" type="range" min="0" max="100" value="50" aria-label="Сравнение до и после" data-i18n-aria="cases.aria">
+            </div>
+            <div class="case__body">
+              <h3 class="case__title" data-i18n="cases.c1.t">Кузовной ремонт BMW 3 Series</h3>
+              <p class="case__text" data-i18n="cases.c1.d">Правка крыла, покраска в камере, полировка всего кузова. Работа заняла 3 дня.</p>
+            </div>
+          </article>
+
+          <article class="case reveal">
+            <div class="ba" style="--pos:50%">
+              <img class="ba__img ba__img--after" src="https://images.unsplash.com/photo-1493238792000-8113da705763?auto=format&fit=crop&w=1200&q=80" alt="Салон после детейлинга" data-i18n-alt="cases.c2.after" loading="lazy" width="800" height="533">
+              <img class="ba__img ba__img--before" src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=1200&q=80" alt="Салон до детейлинга" data-i18n-alt="cases.c2.before" loading="lazy" width="800" height="533">
+              <span class="ba__tag ba__tag--l" data-i18n="cases.before">До</span>
+              <span class="ba__tag ba__tag--r" data-i18n="cases.after">После</span>
+              <span class="ba__handle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 6l-5 6 5 6M15 6l5 6-5 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <input class="ba__range" type="range" min="0" max="100" value="50" aria-label="Сравнение до и после" data-i18n-aria="cases.aria">
+            </div>
+            <div class="case__body">
+              <h3 class="case__title" data-i18n="cases.c2.t">Детейлинг салона Volkswagen</h3>
+              <p class="case__text" data-i18n="cases.c2.d">Химчистка салона, реставрация кожи, антибактериальная обработка воздуховодов.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TEAM ===================== -->
+    <section class="section section--alt" id="team">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow" data-i18n="team.eyebrow">Команда</span>
+          <h2 class="section__title" data-i18n="team.title">Мастера, которым доверяют машины</h2>
+        </header>
+
+        <div class="grid grid--4">
+          <article class="person reveal">
+            <div class="person__photo"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80" alt="Андрей Соколов" data-i18n-alt="team.p1.name" loading="lazy" width="400" height="400"></div>
+            <h3 class="person__name" data-i18n="team.p1.name">Андрей Соколов</h3>
+            <p class="person__role" data-i18n="team.p1.role">Главный механик</p>
+            <p class="person__meta" data-i18n="team.p1.meta">16 лет опыта · Двигатели, ГРМ</p>
+          </article>
+          <article class="person reveal">
+            <div class="person__photo"><img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=600&q=80" alt="Мария Ковалёва" data-i18n-alt="team.p2.name" loading="lazy" width="400" height="400"></div>
+            <h3 class="person__name" data-i18n="team.p2.name">Мария Ковалёва</h3>
+            <p class="person__role" data-i18n="team.p2.role">Специалист по диагностике</p>
+            <p class="person__meta" data-i18n="team.p2.meta">9 лет опыта · Электроника</p>
+          </article>
+          <article class="person reveal">
+            <div class="person__photo"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80" alt="Игорь Петров" data-i18n-alt="team.p3.name" loading="lazy" width="400" height="400"></div>
+            <h3 class="person__name" data-i18n="team.p3.name">Игорь Петров</h3>
+            <p class="person__role" data-i18n="team.p3.role">Кузовной мастер</p>
+            <p class="person__meta" data-i18n="team.p3.meta">12 лет опыта · Покраска, PDR</p>
+          </article>
+          <article class="person reveal">
+            <div class="person__photo"><img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&q=80" alt="Елена Волкова" data-i18n-alt="team.p4.name" loading="lazy" width="400" height="400"></div>
+            <h3 class="person__name" data-i18n="team.p4.name">Елена Волкова</h3>
+            <p class="person__role" data-i18n="team.p4.role">Менеджер сервиса</p>
+            <p class="person__meta" data-i18n="team.p4.meta">Запись и сметы · 7 лет в сервисе</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== REVIEWS ===================== -->
+    <section class="section" id="reviews">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow" data-i18n="rev.eyebrow">Отзывы</span>
+          <h2 class="section__title" data-i18n="rev.title">Что говорят автовладельцы</h2>
+        </header>
+
+        <div class="slider reveal" data-slider>
+          <div class="slider__viewport">
+            <ul class="slider__track">
+              <li class="slide">
+                <figure class="review">
+                  <svg class="review__quote" aria-hidden="true"><use href="#i-quote"/></svg>
+                  <blockquote class="review__text" data-i18n="rev.r1.d">Приехал с адским стуком в подвеске, боялся космических сумм. Сделали диагностику бесплатно, показали износ на подъёмнике и согласовали смету. Через два дня забрал машину — как новая. Отдельное спасибо за фотоотчёт в мессенджер.</blockquote>
+                  <figcaption class="review__author">
+                    <span class="review__avatar" aria-hidden="true">ДК</span>
+                    <span class="review__meta"><strong data-i18n="rev.r1.n">Дмитрий К.</strong><span data-i18n="rev.r1.c">Skoda Octavia, 2018</span></span>
+                    <span class="review__stars" aria-label="Оценка 5 из 5" data-i18n-aria="rev.star5"><svg class="icon icon--star"><use href="#i-star"/></svg><svg class="icon icon--star"><use href="#i-star"/></svg><svg class="icon icon--star"><use href="#i-star"/></svg><svg class="icon icon--star"><use href="#i-star"/></svg><svg class="icon icon--star"><use href="#i-star"/></svg></span>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="slide">
+                <figure class="review">
+                  <svg class="review__quote" aria-hidden="true"><use href="#i-quote"/></svg>
+                  <blockquote class="review__text" data-i18n="rev.r2.d">Записалась онлайн вечером, перезвонили утром и предложили время на 10:00. Менеджер Елена заранее объяснила, какие работы действительно нужны, а какие можно отложить. Чувствуется, что не тянут деньги.</blockquote>
+                  <figcaption class="review__author">
+                    <span class="review__avatar" aria-hidden="true">ОМ</span>
+                    <span class="review__meta"><strong data-i18n="rev.r2.n">Ольга М.</strong><span data-i18n="rev.r2.c">Toyota RAV4, 2020</span></span>
+                    <span class="review__stars" aria-label="Оценка 5 из 5" data-i18n-aria="rev.star5"><svg class="icon icon--star"><use href="#i-star"/></svg><svg class="icon icon--star"><use href="#i-star"/></svg><svg class="icon icon--star"><use href="#i-star"/></svg><svg class="icon icon--star"><use href="#i-star"/></svg><svg class="icon icon--star"><use href="#i-star"/></svg></span>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="slide">
+                <figure class="review">
+                  <svg class="review__quote" aria-hidden="true"><use href="#i-quote"/></svg>
+                  <blockquote class="review__text" data-i18n="rev.r3.d">Меняли ремень ГРМ на 6-й серии. Дали подменный автомобиль на один день, уложились в срок и в смету. Через год вернулся сюда же на ТО — теперь только сюда.</blockquote>
+                  <figcaption class="review__author">
+                    <span class="review__avatar" aria-hidden="true">АС</span>
+                    <span class="review__meta"><strong data-i18n="rev.r3.n">Артём С.</strong><span data-i18n="rev.r3.c">BMW 530i, 2016</span></span>
+                    <span class="review__stars" aria-label="Оценка 5 из 5" data-i18n-aria="rev.star5"><svg class="icon icon--star"><use href="#i-star"/></svg><svg class="icon icon--star"><use href="#i-star"/></svg><svg class="icon icon--star"><use href="#i-star"/></svg><svg class="icon icon--star"><use href="#i-star"/></svg><svg class="icon icon--star"><use href="#i-star"/></svg></span>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+
+          <div class="slider__controls">
+            <button class="slider__btn" type="button" data-prev aria-label="Предыдущий отзыв" data-i18n-aria="rev.prev"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <div class="slider__dots" data-dots></div>
+            <button class="slider__btn" type="button" data-next aria-label="Следующий отзыв" data-i18n-aria="rev.next"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section class="section section--alt" id="faq">
+      <div class="container container--narrow">
+        <header class="section__head reveal">
+          <span class="eyebrow" data-i18n="faq.eyebrow">FAQ</span>
+          <h2 class="section__title" data-i18n="faq.title">Частые вопросы</h2>
+        </header>
+
+        <div class="faq reveal">
+          <details class="faq__item">
+            <summary class="faq__q" data-i18n="faq.q1">Сколько стоит диагностика и входит ли она в стоимость ремонта?</summary>
+            <div class="faq__a"><p data-i18n="faq.a1">Диагностика ходовой стоит 1 200 ₽, но при заказе ремонта в этом же сервисе она бесплатна. Компьютерное сканирование ЭБУ — 1 200 ₽ независимо от дальнейших работ.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__q" data-i18n="faq.q2">Работаете ли вы с кроссоверами и внедорожниками?</summary>
+            <div class="faq__a"><p data-i18n="faq.a2">Да. В цехе есть подъёмники до 3,5 тонны, поэтому принимаем кроссоверы, пикапы и полноразмерные внедорожники, включая Lexus LX и Toyota Land Cruiser.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__q" data-i18n="faq.q3">Можно ли ждать в зоне отдыха во время ремонта?</summary>
+            <div class="faq__a"><p data-i18n="faq.a3">Конечно. У нас есть зона отдыха с кофе, Wi-Fi, рабочими местами и детским уголком. Если ремонт длинный — предоставим подменный автомобиль бесплатно.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__q" data-i18n="faq.q4">Какая гарантия на работы и запчасти?</summary>
+            <div class="faq__a"><p data-i18n="faq.a4">2 года на все виды работ и на установленные у нас запчасти. Гарантийный талон выдаём вместе со сметой и фотоотчётом.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__q" data-i18n="faq.q5">Принимаете ли оплату картой и рассрочку?</summary>
+            <div class="faq__a"><p data-i18n="faq.a5">Принимаем наличные, карты, СБП и безналичный расчёт для юрлиц. Для сложных ремонтов доступна рассрочка до 6 месяцев через банк-партнёр.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__q" data-i18n="faq.q6">Нужно ли записываться заранее?</summary>
+            <div class="faq__a"><p data-i18n="faq.a6">Желательно — так мы гарантированно освободим пост и мастера. Но принимаем и без записи: малые работы (масло, шиномонтаж) обычно без ожидания.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== BLOG ===================== -->
+    <section class="section" id="blog">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow" data-i18n="blog.eyebrow">Блог</span>
+          <h2 class="section__title" data-i18n="blog.title">Полезное для автовладельцев</h2>
+          <p class="section__sub" data-i18n="blog.sub">Разбираемся в устройстве автомобиля и рассказываем, как не переплатить за ремонт.</p>
+        </header>
+
+        <div class="grid grid--3">
+          <a class="post reveal" href="blog/kak-vybrat-maslo.html">
+            <div class="post__cover"><img src="https://images.unsplash.com/photo-1632823469850-1b7b1e8b7e2e?auto=format&fit=crop&w=900&q=80" alt="Моторное масло и фильтр" data-i18n-alt="blog.b1.alt" loading="lazy" width="600" height="400"></div>
+            <div class="post__body">
+              <span class="post__meta"><span data-i18n="blog.b1.cat">Эксплуатация</span> · <time datetime="2026-09-12">12.09.2026</time></span>
+              <h3 class="post__title" data-i18n="blog.b1.t">Как выбрать моторное масло и не переплатить</h3>
+              <p class="post__excerpt" data-i18n="blog.b1.d">Вязкость, допуски производителя, синтетика или гидрокрекинг — объясняем простыми словами.</p>
+              <span class="post__more"><span data-i18n="blog.read">Читать статью</span> <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+            </div>
+          </a>
+
+          <a class="post reveal" href="blog/priznaki-iznosa-podveski.html">
+            <div class="post__cover"><img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=900&q=80" alt="Диагностика подвески автомобиля" data-i18n-alt="blog.b2.alt" loading="lazy" width="600" height="400"></div>
+            <div class="post__body">
+              <span class="post__meta"><span data-i18n="blog.b2.cat">Ремонт</span> · <time datetime="2026-08-28">28.08.2026</time></span>
+              <h3 class="post__title" data-i18n="blog.b2.t">5 признаков износа подвески, которые слышно</h3>
+              <p class="post__excerpt" data-i18n="blog.b2.d">Стуки на кочках, раскачка и увод от курса: что проверить в первую очередь и во сколько обойдётся.</p>
+              <span class="post__more"><span data-i18n="blog.read">Читать статью</span> <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+            </div>
+          </a>
+
+          <a class="post reveal" href="blog/zimnyaya-podgotovka.html">
+            <div class="post__cover"><img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=900&q=80" alt="Автомобиль зимой" data-i18n-alt="blog.b3.alt" loading="lazy" width="600" height="400"></div>
+            <div class="post__body">
+              <span class="post__meta"><span data-i18n="blog.b3.cat">Сезон</span> · <time datetime="2026-08-05">05.08.2026</time></span>
+              <h3 class="post__title" data-i18n="blog.b3.t">Зимняя подготовка автомобиля: чек-лист из 9 пунктов</h3>
+              <p class="post__excerpt" data-i18n="blog.b3.d">Жидкости, аккумулятор, резина и печка — что реально нужно сделать до первых морозов.</p>
+              <span class="post__more"><span data-i18n="blog.read">Читать статью</span> <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT FORM ===================== -->
+    <section class="section section--cta" id="contact">
+      <div class="container">
+        <div class="cta reveal">
+          <div class="cta__info">
+            <span class="eyebrow" data-i18n="form.eyebrow">Онлайн-запись</span>
+            <h2 class="section__title" data-i18n="form.title">Запишитесь на сервис за минуту</h2>
+            <p class="section__sub section__sub--left" data-i18n="form.sub">Оставьте контакты — перезвоним в течение 15 минут в рабочее время и подтвердим удобный слот.</p>
+            <ul class="cta__list">
+              <li><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span data-i18n="form.l1">Бесплатная диагностика при ремонте</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg><span data-i18n="form.l2">Ответ в течение 15 минут</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg><span data-i18n="form.l3">Напомним о записи в WhatsApp или Telegram</span></li>
+            </ul>
+          </div>
+
+          <form class="form" id="form" novalidate>
+            <div class="field">
+              <label for="f-name" data-i18n="form.name">Имя</label>
+              <input id="f-name" name="name" type="text" required minlength="2" autocomplete="name" placeholder="Иван" data-i18n-placeholder="form.namePh">
+              <span class="field__err" data-err data-i18n="form.errName">Введите имя (минимум 2 символа)</span>
+            </div>
+            <div class="field">
+              <label for="f-phone" data-i18n="form.phone">Телефон</label>
+              <input id="f-phone" name="phone" type="tel" required inputmode="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" data-i18n-placeholder="form.phonePh">
+              <span class="field__err" data-err data-i18n="form.errPhone">Введите корректный номер телефона</span>
+            </div>
+            <div class="field">
+              <label for="f-car" data-i18n="form.car">Автомобиль</label>
+              <input id="f-car" name="car" type="text" placeholder="Skoda Octavia, 2018" data-i18n-placeholder="form.carPh">
+            </div>
+            <div class="field">
+              <label for="f-service" data-i18n="form.service">Услуга</label>
+              <select id="f-service" name="service" required>
+                <option value="" data-i18n="form.opt0">Выберите услугу</option>
+                <option data-i18n="form.opt1">Техническое обслуживание</option>
+                <option data-i18n="form.opt2">Диагностика</option>
+                <option data-i18n="form.opt3">Ремонт двигателя</option>
+                <option data-i18n="form.opt4">Подвеска и тормоза</option>
+                <option data-i18n="form.opt5">Кузовной ремонт</option>
+                <option data-i18n="form.opt6">Шиномонтаж</option>
+                <option data-i18n="form.opt7">Другое</option>
+              </select>
+              <span class="field__err" data-err data-i18n="form.errService">Выберите услугу</span>
+            </div>
+            <div class="field">
+              <label for="f-date" data-i18n="form.date">Желаемая дата</label>
+              <input id="f-date" name="date" type="date">
+            </div>
+            <div class="field field--full">
+              <label for="f-msg" data-i18n="form.msg">Комментарий</label>
+              <textarea id="f-msg" name="message" rows="3" placeholder="Опишите проблему" data-i18n-placeholder="form.msgPh"></textarea>
+            </div>
+            <div class="field field--full field--check">
+              <label class="check">
+                <input id="f-agree" type="checkbox" required>
+                <span data-i18n="form.agree">Согласен на обработку персональных данных</span>
+              </label>
+              <span class="field__err" data-err data-i18n="form.errAgree">Нужно согласие, чтобы отправить заявку</span>
+            </div>
+            <button class="btn btn--accent btn--lg field--full" type="submit" data-i18n="form.submit">Отправить заявку</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACTS ===================== -->
+    <section class="section" id="contacts">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow" data-i18n="cont.eyebrow">Контакты</span>
+          <h2 class="section__title" data-i18n="cont.title">Ждём вас на сервисе</h2>
+        </header>
+
+        <div class="contacts reveal">
+          <ul class="contacts__list">
+            <li class="contact">
+              <span class="contact__icon" aria-hidden="true"><svg><use href="#i-pin"/></svg></span>
+              <div><h3 data-i18n="cont.addr.t">Адрес</h3><p data-i18n="cont.addr.d">г. Москва, ул. Автозаводская, 23, стр. 1</p></div>
+            </li>
+            <li class="contact">
+              <span class="contact__icon" aria-hidden="true"><svg><use href="#i-phone"/></svg></span>
+              <div><h3 data-i18n="cont.phone.t">Телефон</h3><p><a href="tel:+79999999999">+7 999 999 99 99</a></p></div>
+            </li>
+            <li class="contact">
+              <span class="contact__icon" aria-hidden="true"><svg><use href="#i-clock"/></svg></span>
+              <div><h3 data-i18n="cont.hours.t">Режим работы</h3><p data-i18n="cont.hours.d">Пн–Сб: 09:00–21:00 · Вс: 10:00–18:00</p></div>
+            </li>
+            <li class="contact">
+              <span class="contact__icon" aria-hidden="true"><svg><use href="#i-mail"/></svg></span>
+              <div><h3 data-i18n="cont.mail.t">Почта</h3><p><a href="mailto:test@gmail.com">test@gmail.com</a></p></div>
+            </li>
+          </ul>
+
+          <div class="contacts__map">
+            <iframe title="Карта проезда" data-i18n-title="cont.mapTitle" src="https://www.openstreetmap.org/export/embed.html?bbox=37.6390%2C55.7410%2C37.6740%2C55.7560&amp;layer=mapnik&amp;marker=55.7485%2C37.6565" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__col footer__col--brand">
+        <a class="logo" href="index.html">
+          <svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" transform="translate(2 2)"/></svg>
+          <span class="logo__text">Авто<span class="accent">Мастер</span></span>
+        </a>
+        <p class="footer__about" data-i18n="foot.about">Автосервис полного цикла в Москве с 2009 года. Диагностика, ремонт, ТО и кузовные работы с гарантией 2 года.</p>
+      </div>
+      <div class="footer__col">
+        <h4 data-i18n="foot.c1">Услуги</h4>
+        <ul>
+          <li><a href="#services" data-i18n="services.s1.t">Техническое обслуживание</a></li>
+          <li><a href="#services" data-i18n="services.s2.t">Компьютерная диагностика</a></li>
+          <li><a href="#services" data-i18n="services.s3.t">Ремонт двигателя</a></li>
+          <li><a href="#services" data-i18n="services.s5.t">Кузовной ремонт</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 data-i18n="foot.c2">Компания</h4>
+        <ul>
+          <li><a href="#advantages" data-i18n="foot.l1">О сервисе</a></li>
+          <li><a href="#team" data-i18n="nav.team">Команда</a></li>
+          <li><a href="#prices" data-i18n="nav.prices">Цены</a></li>
+          <li><a href="#blog" data-i18n="nav.blog">Блог</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 data-i18n="foot.c3">Контакты</h4>
+        <ul>
+          <li><a href="tel:+79999999999">+7 999 999 99 99</a></li>
+          <li><a href="mailto:test@gmail.com">test@gmail.com</a></li>
+          <li><span data-i18n="cont.addr.d">г. Москва, ул. Автозаводская, 23, стр. 1</span></li>
+          <li><span data-i18n="cont.hours.d">Пн–Сб: 09:00–21:00 · Вс: 10:00–18:00</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p data-i18n="foot.copy">© 2026 «АвтоМастер». Все права защищены. Демо-проект для портфолио.</p>
+      <a class="footer__top" href="#hero" data-i18n="foot.top">Наверх ↑</a>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
